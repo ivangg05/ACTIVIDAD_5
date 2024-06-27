@@ -1,0 +1,28 @@
+<div>
+    <h2>Lista de Noticias</h2>
+    <div id="noticiasContainer"></div>
+  </div>
+  
+  <div>
+    <h2>Agregar Nueva Noticia</h2>
+    <div>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" [(ngModel)]="newNoticia.titulo" name="titulo" required>
+     
+  
+      <label for="imagen">Imagen (URL):</label>
+      <input type="text" id="imagen" [(ngModel)]="newNoticia.imagen" name="imagen" required>
+
+  
+      <label for="texto">Texto:</label>
+      <input id="texto" [(ngModel)]="newNoticia.texto" name="texto" required>
+      
+  
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" [(ngModel)]="newNoticia.fecha" name="fecha" required>
+     
+  
+      <button (click)="agregarNoticia()">Agregar Noticia</button>
+    </div>
+  </div>
+  
